@@ -1,5 +1,5 @@
 
-var base_path = "http://localhost:8000";
+var base_path = "https://drcd1.github.io";
 
 function play_video(){
     console.log("video play!");
