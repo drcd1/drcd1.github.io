@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Duarte David's Personal Webpage </title>
+
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/css/home.css">
+</head>
+<body>
+<div id="cover-box"></div>
+<div id = 'container'>
+<div id= 'container-help'>
+<div id = 'header'>
+<div id = 'video_container'>
+<video muted id="profile_video">
+	<source src="http://localhost:8000/resources/profile_vid.mp4"
+            type="video/mp4">
+
+</video>
+</div> <!-- video container -->
+
+<div>
+<h1>Duarte David</h1>
+</div> <!-- Name -->
+<nav>
+	<ul>
+		<li id=about_tab onclick="location.href='http://localhost:8000/html/about';">about</li>
+		<li id=stuff_tab onclick="location.href='http://localhost:8000/html/stuff_i_ve_made';">stuff i've made</li>
+		<li id=learning_tab onclick="location.href='http://localhost:8000/html/learning_resources';">learning resources</li>
+		<li id=more_tab onclick="location.href='http://localhost:8000/html/more_stuff_i_ve_made?play_video=normal';">hidden/secret stuff i've made (hobbies)</li>
+	</ul>
+</nav>
+</div><!-- Header -->
+<div id="horizontal_bars">
+<div id="horizontal_bar1"></div>
+<div id="horizontal_bar2"></div>
+<div id="horizontal_bar3"></div>
+<div id="horizontal_bar4"></div>
+<div id="horizontal_bar5"></div>
+<div id="horizontal_bar6"></div>
+<div id="horizontal_bar7"></div>
+</div> <!-- Hortizontal bars -->
+<script src="http://localhost:8000/js/profile_video.js"></script>
+
+<div id="content_top">
+
+    <div class = 'content'>
+    <h1>learning resources</h1>
+    Here are a few interesting resources I picked up along the way, for those of you who wish to join me on my pilgrimage to learn Computer Graphics. 
+    Hopefully in time I will extend this with my own notes, but for now, this'll have to do.
+
+    <h2>starter's pack</h2>
+    <p><a href="https://www.scratchapixel.com/"">Scratchapixel</a> contains one of the most concise but 
+    comprehensive introduction to Computer Graphics that I know of. If you know absolutely nothing about graphics (or even if you know a 
+    bit but would like some pointers), you should definitely start here.
+    </p>    
+    <p>
+    Of course, reading stuff is usually not enough. At least, not for me. When getting started with a topic, what really helps me is getting my hands dirty,
+    play around a bit and code some stuff or do some math. Maybe reinvent the wheel a little bit. 
+    </p>
+
+
+
+    <h2>offline rendering</h2>
+    <p>
+    <a href = "https://www.pbrt.org/">Physically Based Rendering</a>, by Matt Pharr, Wenzel Jakob and Greg Humphreys is what I consider to be
+    the fundamental book in Computer Graphics. Their principled approach to explaining every problem makes the book easy to read, 
+    and their use of literate programming to create the book and the underlying render engine from one single source makes it so that the reader is never lost.
+    Overall, an absolutely flawless book. And the 3rd Edition is available on their website, for free!
+    </p>
+    <p>
+    <a href = "https://graphics.stanford.edu/papers/veach_thesis/">Eric Veach's PhD Thesis</a> has also been something that I consulted time and time
+    again during the courses I took in my Master's. Again, a very thorough explanation of most of the key concepts in pathtracing.
+    </p>
+    <p>
+    After learning the basics, <a href = "https://graphics.cg.uni-saarland.de/publications/advances-in-mc-2020-siggraph-course.html">
+        Advances in Monte Carlo rendering: The Legacy of Jaroslav Křivánek</a> is a course I strongly recommend going through, 
+        as it basically covers the state of the art in Offline Rendering, as well as serving as a tribubte to one of its most prominent researchers.
+    </p>
+    
+    <h2>real-time rendering</h2>
+    <p>
+    If you are familiar with the basics of rendering and shading (see resources above), then the biggest hurdle to overcome is probably
+    getting things done on the GPU. The first thing to do is to get aquainted with graphics API. The way I did it (okay, technically I am 
+    still doing it) was to learn WebGL first, then OpenGL, then WebGPU and finally Vulkan, in this order. 
+    </p>
+    <p>
+    The Web API's are roughly equivalent to their native counterparts, but their simpler abstractions and ease to deploy make them more friendly to
+    first time graphics programmers. 
+    </p>
+    <p>
+    <a href= "https://webgl2fundamentals.org/">WebGL2 Fundamentals</a> and <a href="https://vulkan-tutorial.com/">Vulkan Tutorial</a>
+    are probably the two most comprehensive tutorials, and both are highly recommended.
+    </p>
+    
+    <a href= https://godotengine.org/article/godot-3-renderer-design-explained>This explanation of Godot 3's rendering engine</a> is a great introduction to renderer design, and<
+    <a href =http://www.aortiz.me/2018/12/21/CG.html#clustered-shading>this blog post by Ángel Ortiz</a> has a pretty thorough overview of current designs for renderers,
+        with much better references than I could provide.
+    <h2>geometry processing</h2>
+    (todo)
+    <h2>physics simulation</h2>
+    <p>
+    <a href="https://learning.edx.org/course/course-v1:ColumbiaX+CSMM.104x+3T2018">This course on EdX by Prof. Eitan Grinspun and the Univeristy of Columbia</a>
+    </p>
+    <h2>animation</h2>
+    <p>
+    (todo);
+    </p>
+    <p></p>
+
+    </div>
+    
+
+</div><!-- content top -->
+
+<script src="http://localhost:8000/js/process_request.js"></script>
+</div><!-- container-help -->
+</div><!-- container -->
+</body>
+</html>

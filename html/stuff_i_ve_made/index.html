@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Duarte David's Personal Webpage </title>
+
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="http://localhost:8000/css/home.css">
+</head>
+<body>
+<div id="cover-box"></div>
+<div id = 'container'>
+<div id= 'container-help'>
+<div id = 'header'>
+<div id = 'video_container'>
+<video muted id="profile_video">
+	<source src="http://localhost:8000/resources/profile_vid.mp4"
+            type="video/mp4">
+
+</video>
+</div> <!-- video container -->
+
+<div>
+<h1>Duarte David</h1>
+</div> <!-- Name -->
+<nav>
+	<ul>
+		<li id=about_tab onclick="location.href='http://localhost:8000/html/about';">about</li>
+		<li id=stuff_tab onclick="location.href='http://localhost:8000/html/stuff_i_ve_made';">stuff i've made</li>
+		<li id=learning_tab onclick="location.href='http://localhost:8000/html/learning_resources';">learning resources</li>
+		<li id=more_tab onclick="location.href='http://localhost:8000/html/more_stuff_i_ve_made?play_video=normal';">hidden/secret stuff i've made (hobbies)</li>
+	</ul>
+</nav>
+</div><!-- Header -->
+<div id="horizontal_bars">
+<div id="horizontal_bar1"></div>
+<div id="horizontal_bar2"></div>
+<div id="horizontal_bar3"></div>
+<div id="horizontal_bar4"></div>
+<div id="horizontal_bar5"></div>
+<div id="horizontal_bar6"></div>
+<div id="horizontal_bar7"></div>
+</div> <!-- Hortizontal bars -->
+<script src="http://localhost:8000/js/profile_video.js"></script>
+
+<div id="content_top">
+
+    <div class = 'content'>
+    <h1>stuff i've made</h1>
+    Here's a few things I've made along the way. Some of them are personal projects, some are things-that-were-used-by-actual-people, 
+    and others are project courses where I went above and beyond (and a bit outside the scope) of what was needed.
+     Source is available for all of them, so feel free to check it out!
+    <div>
+        <div>
+        <h2>twin pathtracers | c++ vs rust</h2>
+        <div class = "two_cols">
+            <div class = "left_col">
+            <img id="twin_image" src="https://raw.githubusercontent.com/drcd1/rusty-pete/main/sample_renders/cornell.png">
+            </div>
+        <div class = 'right_col'>
+        
+            <p>This is a little experiment I'm making, comparing the performance of C++ and Rust by writing a toy pathtracer in both languages.</p>
+            <p>So far, I've found that it's more natural to write higher performance code in Rust. Using similar constructs, and writing basic textbok code,
+            I've found that the code in Rust runs ~50-100% faster. I'm looking forward to keep working on this project, and I'm really curious 
+            to see what happens as I turn this into a fully fledged (bidirectional) pathtracer.
+            </p>
+            
+        </div>
+        </div>
+        </div>
+    </div>
+    <div>
+        <div>
+        <h2>cloth simulation | "numerical methods for odes" project @ University of Saarland</h2>
+        <div class = "two_cols">
+            <div class = "left_col">
+            <video muted autoplay loop id="cloth_video">
+                <source src="http://localhost:8000/resources/cloth_example.mp4"
+                    type="video/mp4">
+            </video>
+            </div>
+            <div class = 'right_col'>
+            <p>
+                This was a project for the course "Numerical Methods for ODEs" at the University of Saarland. 
+            </p>
+            <p>
+                Since we had free reign over the project, (i.e.: do anything that can be described by an ordinary differential equation), I chose to do something 
+                a little more complicated and implement a simple mass-spring cloth simulation, with a few collision primitives, and tested it for (almost) all integrators covered in the lecture 
+                (which was really easy to do since I implemented the proper abstractions). You may find the code <a href="">here</a>, as well as a short report <a href="">here</a>.
+            </p>
+            </div>
+        </div><!--two collumns-->
+        </div>
+    </div>
+    <div>
+        
+        <div>
+        <h2>ricochet robots instance visualizer | course material for ai @ Instituto Superior Técnico </h2>
+        <div class = "two_cols">
+            <div class = "left_col">
+            <video muted autoplay loop id="robot_video">
+                <source src="http://localhost:8000/resources/robots_example.mp4"
+                    type="video/mp4">
+            </video>
+            </div>
+        <div class = 'right_col'>
+        <p>
+            A vizualizer used by the students in the Artifical Intelligence course at Instituto Superior Técnico in the year 2020/2021, created by me and
+            <a href="">Margarida Ferreira</a>.
+            It allowed students to create their own instances of Ricochet Robots, to play the game, save the solutions and playback
+            any solution. Code can be found <a href="https://github.com/drcd1/Ricochet-Robots-Viewer">here</a>, 
+            and you can play around with it <a href="https://drcd1.github.io/Ricochet-Robots-Viewer/">here</a>.
+        </p>            
+        </div>
+        </div><!--two collumns-->
+        </div>
+    </div>
+    <div>
+        <div>
+        <h2>ground truth ambient occlusion | godot 3.x pull request</h2> 
+        <div class = "two_cols">
+            <div class = "left_col">
+            <img id="twin_image" src="http://localhost:8000/resources/gtao.png">
+            </div>
+        <div class = 'right_col'>
+        <p>
+            After fixing a <a href="https://github.com/godotengine/godot/pull/53154">couple</a> of (very small) <a href="https://github.com/godotengine/godot/pull/51989">bugs</a> in Godot, 
+            I thought it was time to try and contribute with something a little more ambitious, so I did an implementation of 
+            <a href="https://iryoku.com/downloads/Practical-Realtime-Strategies-for-Accurate-Indirect-Occlusion.pdf">GTAO by Jimenez et al.</a>
+            There are still a few snags that need fixing, but we'll hopefully get it merged for 3.5.
+        </p>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <div>
+        <div>
+        <h2>brushify | an "optimization" algorithm to paint pictures </h2> 
+        <div class="two_cols">
+        <div class="left_col">
+            <video muted autoplay loop id="brushify_video">
+                <source src="http://localhost:8000/resources/brushify_example.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+        <div class = right_col">
+        <p>
+            I felt inspired enough by this <a href="https://twitter.com/anastasiaopara/status/1256506663969972224">tweet</a> to create my own quick implementation of the algorithm described there. 
+            It truly was a pleasant surprise to see the results from what is effectively the simplest "optimization" algorithm.
+        </p>
+        </div>
+        </div>
+        </div>
+    </div>
+    <h1>older stuff</h1>
+    <div>
+        <div>
+        <h2>pathtracer | project for "3d programming" class @ Instituto Superior Técnico</h2>
+        <p>
+            Pathtracer done with <a href="">Daniel Ramos</a> for a class. The project was only required to be a simple ray tracer with some distributed ray-tracing elements
+            (soft-shadows, glossy reflections, etc...), but we decided to implement a full pathtracer with support for HRD environment maps, 
+            normal maps, physically based shading, and bokeh depth of field, among other things. <a>Code</a> and <a>Video</a>
+        </p>
+        </div>
+    </div>
+    <div>
+        <div>
+        <h2>c++ renderer/rasterizer</h2>
+        <p>
+            This is a software rasterizer and renderer that I did to learn the basics of Computer Graphics, before I had ever seen a graphics API in my life.
+            It's not very fast, but it has a few elegantly designed abstractions. It did at some point support <a href="https://en.wikipedia.org/wiki/Shadow_volume">shadow volumes</a> 
+            (which is probably my favorite tech in real time rendering), but it was buggy and slow, so they are not there anymore.
+        </p>
+        </div>
+    </div>
+    <div>
+        <div>
+        <h2>fractal renderer | written in sfml 2.0</h2>
+        <p>
+            (missing description)
+        </p>
+        </div>
+    </div>
+    
+    <div>
+        <div>
+        <h2>cairo/gtk2 renderer</h2>
+        <p>
+            After I finished my first Programming course, I became aware of my love for Computer Graphics 
+            (which made me switch from Physics to Computer Science the next year). So naturally I used the tools I knew (cairo and gtk2) to
+            create a simple renderer. It's not much, but it was really fun to do!
+        </p>
+        </div>
+    </div>
+
+    <div>
+        <div>
+        <h2>super disk collider!  |  Project for "Programming" course @ Instituto Superior Técnico</h2>
+        <p>
+            This was the project for the first Programming course I took (and my first time programming in general!).
+             Me and <a href=""> Diogo Valada</a> went above and beyond what was asked of us and instead of solving the problem of two 
+             discs colliding analytically, we created a relatively* robust collision solver that works for many disks. Please do not look at the <a href="">code</a>.
+        </p>
+        <p>
+            *okaay, it's not guaranteed to terminate BUT when it does it yields correct chain collisions!
+        </p>
+        </div>
+    </div>
+    
+    
+    </div>
+
+</div><!-- content top -->
+
+<script src="http://localhost:8000/js/process_request.js"></script>
+</div><!-- container-help -->
+</div><!-- container -->
+</body>
+</html>
