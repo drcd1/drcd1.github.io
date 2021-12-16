@@ -1,6 +1,3 @@
-
-var base_path = "https://drcd1.github.io";
-
 function play_video(){
     console.log("video play!");
     let video = document.getElementById("profile_video")
