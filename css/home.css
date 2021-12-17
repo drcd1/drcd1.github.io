@@ -1,12 +1,14 @@
 :root {
     --back-color:#f8f8f8;
 	  --main-color:#f01020;
+	  --font-color:#404040;
 }
 
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
 	background-color: var(--back-color);
+	color:var(--font-color);
 }
 .content{
 	letter-spacing: 0.02em;
@@ -16,6 +18,15 @@ body {
 	color: #808080;
 	letter-spacing: 0.4em;
 }
+
+.content li{
+	margin-top: 0.5rem;
+}
+
+.content {
+	margin-bottom: 5rem;
+}
+
 .content h2{
 	color: #303030;
 	font-weight: 100;
@@ -28,16 +39,25 @@ body {
 }
 
 #more_stuff h3{
+	margin-top: 2rem;
 	color: #303030;
 	font-weight: 100;
 	border-top-style: solid;
 	border-top-color: black;
 	border-top-width: 0.05rem;
 	padding-top: 0.3rem;
+	padding-left:1rem;
+	padding-right:1rem;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem; 
 	background-color:#dddddd;
 	padding-bottom: 0.4rem;
 	
 	letter-spacing: 0.1em;
+}
+
+#more_stuff li{
+	margin-bottom: 0.5rem;
 }
 #photojourno_pics img,#photojourno_pics video{
 	height: 12.5rem;
@@ -205,6 +225,56 @@ body {
   position: fixed;
 	z-index: 1;
 }
+#external_links{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 100;
+	pointer-events: all;
+	margin-top:  -0.0rem;
+}
+#external_links ul{
+	list-style: none;
+	width: 9rem;
+	margin-left: -1.7rem;
+	text-align: right;
+	
+}
+#external_links{
+	list-style: none;
+	width: 9.4rem;
+	margin-left: -0rem;
+	padding: 0.3rem;
+	padding-bottom: 3rem;
+	border-radius: 0rem;
+	background: transparent;
+	
+}
+#external_links p{
+	visibility: hidden;
+	background: linear-gradient(0deg, grey 0%, lightblue 100%);
+	border-color : var(--main-color);
+	padding: 1rem;
+	color: white;
+	margin: 0;
+	border-radius: 2rem;
+}
+#external_links li{
+	background: #dddddd;
+  border-width: 0.1rem;
+	border-style: solid;
+	border-color: #aaaaaa;
+	padding: 0.3rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	margin: 0.3rem;
+	letter-spacing: 0.3rem;
+	border-radius: 1rem;
+}
+
+#external_links li:hover{
+	cursor: pointer;
+}
+
+
 
 nav ul{
 	list-style: none;
@@ -217,8 +287,15 @@ nav ul{
 	
 }
 nav li:hover{
+	cursor: pointer;
 	color: black;
 	background-color: var(--back-color);
+  transition: color 0.3s, background-color  0.3s;
+}
+
+nav .selected{
+	background: linear-gradient(90deg, 
+		var(--main-color) 0%,var(--back-color) 120%);
   transition: color 0.3s, background-color  0.3s;
 }
 #more_tab{
@@ -226,7 +303,7 @@ nav li:hover{
 }
 #more_tab:hover{
 	color: black;
-
+  
 }
 #content_top {
 	margin-left: calc(12rem);
@@ -306,6 +383,16 @@ nav li{
 	  margin-left: 0rem;
 }
 
+#intermission{
+	background: linear-gradient(0deg, #dddddd 0%, 
+		var(--back-color) 100%);
+	border-top-style: solid;
+	border-top-color: darkgray;
+	padding: 1rem;
+	padding-top:0.1rem;
+	border-width: 0.1rem;
+	border-radius: 2rem;
+}
 .posts {
 	padding-top: 2em;
 	max-width: 90%;

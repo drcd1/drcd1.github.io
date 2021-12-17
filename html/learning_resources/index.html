@@ -34,6 +34,13 @@
 		<li id=more_tab onclick="location.href='https://drcd1.github.io/html/more_stuff_i_ve_made?play_video=normal';">hidden/secret stuff i've made (hobbies)</li>
 	</ul>
 </nav>
+<div id="external_links">
+	<ul>
+		<a href='https://www.shadertoy.com/user/drcd1' style="color:inherit;text-decoration:inherit"><li>shadertoy</li></a>
+		<a href='https://github.com/drcd1' style="color:inherit;text-decoration:inherit"><li>github</li></a>
+		<a href='https://twitter.com/_DuarteDavid' style="color:inherit;text-decoration:inherit"><li>twitter</li></a>
+	</ul>
+</div>
 </div><!-- Header -->
 <div id="horizontal_bars">
 <div id="horizontal_bar1"></div>
@@ -45,13 +52,15 @@
 <div id="horizontal_bar7"></div>
 </div> <!-- Hortizontal bars -->
 <script src="https://drcd1.github.io/js/profile_video.js"></script>
+	<script src="https://drcd1.github.io/js/util.js"></script>
 
 <div id="content_top">
 
     <div class = 'content'>
     <h1>learning resources</h1>
     Here are a few interesting resources I picked up along the way, for those of you who wish to join me on my pilgrimage to learn Computer Graphics. 
-    Hopefully in time I will extend this with my own notes, but for now, this'll have to do.
+    Hopefully in time I will extend this with my own notes, but for now, this'll have to do. Note: this is still a work in progress. 
+    More content will be added, more succinct and relevant references will be given.
 
     <h2>starter's pack</h2>
     <p><a href="https://www.scratchapixel.com/"">Scratchapixel</a> contains one of the most concise but 
@@ -60,11 +69,16 @@
     </p>    
     <p>
     Of course, reading stuff is usually not enough. At least, not for me. When getting started with a topic,
-     I find it extremely useful to get my hands dirty, so to speak. The most helpful thing one can do is, I think, implement things.
-     Implementing things from scratch helps me iron out small details, and it is particularly helpful to see
+     I find it extremely useful to get my hands dirty, so to speak. Implementing things from scratch helps me iron out small details,
+      and it is particularly helpful to see
      the things that I was sure I knew, but that in fact I did not.
     </p>
-
+    <p>
+        After reading a little bit about rendering, the very best thing I can think of to
+        get you excited about graphics is the work of <a href= "https://iquilezles.org/">Inigo Quilez</a> 
+        (here's a <a href="https://youtu.be/8--5LwHRhjk">sample</a>). His blog is one of the best educational resources for computer graphics, 
+        and SDF rendering is just a lot of fun!
+    </p>
 
 
     <h2>offline rendering</h2>
@@ -76,18 +90,18 @@
     </p>
     <p>
     <a href = "https://graphics.stanford.edu/papers/veach_thesis/">Eric Veach's PhD Thesis</a> has also been something that I consulted time and time
-    again during the courses I took in my Master's. Again, a very thorough explanation of most of the key concepts in pathtracing.
+    again during the courses I took in my Master's. Again, a very thorough explanation of most of the key concepts in path tracing.
     </p>
     <p>
     After learning the basics, <a href = "https://graphics.cg.uni-saarland.de/publications/advances-in-mc-2020-siggraph-course.html">
         Advances in Monte Carlo rendering: The Legacy of Jaroslav Křivánek</a> is a course I strongly recommend going through, 
-        as it basically covers the state of the art in Offline Rendering, as well as serving as a tribubte to one of its most prominent researchers.
+        as it basically covers the state of the art in Offline Rendering, as well as serving as a tribute to one of its most prominent researchers.
     </p>
     
     <h2>real-time rendering</h2>
     <p>
     If you are familiar with the basics of rendering and shading (see resources above), then the biggest hurdle to overcome is probably
-    getting things done on the GPU. The first thing to do is to get aquainted with graphics API. The way I did it (okay, technically I am 
+    getting things done on the GPU. The first thing to do is to get acquainted with graphics API. The way I did it (okay, technically I am 
     still doing it) was to learn WebGL first, then OpenGL, then WebGPU and finally Vulkan, in this order. 
     </p>
     <p>
@@ -99,29 +113,54 @@
     are probably the two most comprehensive tutorials, and both are highly recommended.
     </p>
     
-    <a href= https://godotengine.org/article/godot-3-renderer-design-explained>This explanation of Godot 3's rendering engine</a> is a great introduction to renderer design, and<
+    <a href= https://godotengine.org/article/godot-3-renderer-design-explained>This explanation of Godot 3's rendering engine</a> 
+    is a great introduction to renderer design, and
     <a href =http://www.aortiz.me/2018/12/21/CG.html#clustered-shading>this blog post by Ángel Ortiz</a> has a pretty thorough overview of current designs for renderers,
         with much better references than I could provide.
 
     <p>
-        For more advanced stuff, I recommend reading <a>Real Time Rendering</a>, which is not a good book in the same way that <a>PBRT</a> is a good book: it is not sufficient in and of itself.
+        For more advanced stuff, I recommend reading <a href="https://www.realtimerendering.com/">Real-Time Rendering</a>, 
+        which is not a good book in the same way that <a href="https://www.pbrt.org/">PBRT</a> is a good book: it is not sufficient in and of itself.
         But if one uses it as an index to find papers to read, it becomes much more valuable.
     </p>
+    <p>I can always recommend skimming through <a href=https://developer.nvidia.com/gpugems/gpugems/contributors>the three editions of GPU Gems</a>, and stopping 
+        to read what you find interesting. Ditto with <a href=>Ray Tracing Gems</a>. <a href=http://gpupro.blogspot.com/>GPU Pro</a> 
+        and <a href=http://gpuzen.blogspot.com/>GPU Zen</a> are also very good references, but ones that I haven't read enough yet.</p>
+    <p>Finally, the best resource for learning all the new techniques in real-time rendering is probably 
+        <a href="https://advances.realtimerendering.com/">this series of SIGGRAPH courses, "Advances in Real-Time Rendering".</a>
+    </p>
+    <p> As for researchers whose output has greatly enriched my knowledge over the years, I can certainly recommend the
+        works of <a href="http://www.iryoku.com/blog">Jorge Jimenez</a> and <a href="https://casual-effects.com/">Morgan McGuire</a></p>
     
     <h2>animation</h2>
     <p>
-        If you've read this far and you already know a little bit about computer graphics, you should already be at ease with coding basic transforms and vertex buffers and
+        If you've read this far and you already know a little bit about computer graphics, 
+        you should already be at ease with coding basic transforms and manipulating vertex buffers.
     </p>
-
+    <p>
+        (TO BE CONTINUED: this section is particularly WIP)
+    </p>
+    <div id=intermission>
     <h3>short intermission</h3>
-    The following to fields of Computer Graphics have a lot in common with Computational Mechanics and Scientific Computing. As such, at the very core lie two
-    distinct (yet often related) problems: How do we create the mathematical model that represents what we want (i.e.: a sculpting tool for smoothing or a simulation of water being poured into a cup),
+    <p>
+    The following two fields of Computer Graphics have a lot in common with Computational Mechanics and Scientific Computing. 
+    As such, at the very core lie two distinct (yet often related) problems: 
+    How do we create the mathematical model that represents what we want (i.e.: a sculpting tool for smoothing 
+    or a simulation of water being poured into a cup),
     and how do we discretize it so that our discrete computers can handle them.
+    </p>
+    <p>
+        This does come with the slight disadvantage that these topics have been researched for much much longer. 
+        It doesn't make them any less interesting, but it becomes harder to know where to start.
+    </p>
+    </div>
 
     <h2>geometry processing</h2>
+    <p>
     Unlike rendering, which is a subject where the foundations are less than half a century old, the realm of geometry processing has a much longer history,
  and as such it's hard to know where to start (or even where to end, given the vastness of the field).
-    <p>
+    </p>   
+ <p>
     University level courses on calculus and multi-variate calculus are a must, as they help establish some of the foundations on dealing with volumes and surfaces, and
     basic knowledge of <a href="https://en.wikipedia.org/wiki/Riemannian_geometry">Riemannian geometry</a> and <a href="Calculus of variations">Calculus of variations</a> help.
     <a href="https://www.youtube.com/watch?v=mas-PUA3OvA&list=PL9_jI1bdZmz0hIrNCMQW1YmZysAiIYSSS">This course by Prof. Keenan Crane and Carnegie Mellon University</a> is probably 
@@ -144,15 +183,19 @@
     </p>
     <p>
        After going through these two resources, one should be able to start reading more advanced stuff. One of the most interesting 
-       things to read about are meshfree methods (and I'm also saying this because it complements the mesh-dependent methods that are so comon in geometry processing).
-       In particular, the <a>material point method</a> appears to be the one most used today.
+       things to read about are <a href="https://en.wikipedia.org/wiki/Meshfree_methods">meshfree methods</a> 
+       (and I'm also saying this because it complements the mesh-dependent methods that are so common in geometry processing).
+       In particular, the <a href="https://en.wikipedia.org/wiki/Material_point_method">material point method</a> and its variants appear to 
+       be the ones most used today.
     </p>
     <p>
-        As for state of the art research in this topic, I think <a href=https://graphics.cs.utah.edu/research/projects/merging-and-splitting/>the work currently being done at the university of
-    Utah is very educational.</a>
+        As for state of the art research in this topic, I think 
+        <a href=https://graphics.cs.utah.edu/research/projects/merging-and-splitting/>the work currently being done at the University of
+    Utah</a> is very educational, and the works of <a href= "https://theorangeduck.com/page/publications">Daniel Holden</a> related to sub-space, data-driven physics are interesting as well.
     </p>
     <p></p>
 
+    <script>set_tab("learning_tab")</script>
     </div>
     
 
