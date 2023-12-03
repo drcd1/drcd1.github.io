@@ -59,12 +59,12 @@
     <div class = 'content'>
     <h1>stuff i've made</h1>
     <p>
-    Here's a few things I've made along the way. Some of them are personal projects, some are things-that-were-used-by-actual-people, 
+    Here's a few things I've made along the way. Some of them are personal projects, some are things-that-were-used-by-actual-people,
     and others are project courses where I went above and beyond (and a bit outside the scope) of what was needed.
      Source is/will be available for all of them, so feel free to check it out!
     </p>
     <p>You can also check out my <a href="https://www.shadertoy.com/user/drcd1">shadertoy</a> for a few small coding experiments I make every once in a while!</p>
-    
+
     <div>
         <div>
         <h2>twin path tracers | c++ vs rust</h2>
@@ -73,13 +73,14 @@
             <img id="twin_image" src="https://raw.githubusercontent.com/drcd1/rusty-pete/main/sample_renders/cornell.png">
             </div>
         <div class = 'right_col'>
-        
+
             <p>This is a little experiment I'm making, comparing the performance of C++ and Rust by writing a toy path tracer in both languages.</p>
             <p>So far, I've found that it's more natural to write higher performance code in Rust. Using similar constructs, and writing basic textbook code,
-            I've found that the code in Rust runs ~50-100% faster. I'm looking forward to keep working on this project, and I'm really curious 
+            I've found that the code in Rust runs ~50-100% faster. I'm looking forward to keep working on this project, and I'm really curious
             to see what happens as I turn this into a fully fledged (bidirectional) path tracer. Here's the <a href="https://github.com/drcd1/cpp-pt">C++ version</a> and the <a href="https://github.com/drcd1/rusty-pete">Rust version</a>.
             </p>
-            
+			<p>(Update: Since I wrote this, I have used the C++ renderer as the basis for my MSc. Thesis, leaving the Rust one behind and moving on to better languages)</p>
+
         </div>
         </div>
         </div>
@@ -96,11 +97,11 @@
             </div>
             <div class = 'right_col'>
             <p>
-                This was a project for the course "Numerical Methods for ODEs" at the University of Saarland. 
+                This was a project for the course "Numerical Methods for ODEs" at the University of Saarland.
             </p>
             <p>
-                Since we had free reign over the project, (i.e.: do anything that can be described by an ordinary differential equation), I chose to do something 
-                a little more complicated and implement a simple mass-spring cloth simulation, with a few collision primitives, and tested it for (almost) all integrators covered in the lecture 
+                Since we had free reign over the project, (i.e.: do anything that can be described by an ordinary differential equation), I chose to do something
+                a little more complicated and implement a simple mass-spring cloth simulation, with a few collision primitives, and tested it for (almost) all integrators covered in the lecture
                 (which was really easy to do since I implemented the proper abstractions). You may find the code <a href="https://github.com/drcd1/cloth_simulation_ode">here</a>, as well as a short report <a href="https://github.com/drcd1/cloth_simulation_ode/raw/main/media/report.pdf">here</a>.
             </p>
             </div>
@@ -108,7 +109,7 @@
         </div>
     </div>
     <div>
-        
+
         <div>
         <h2>ricochet robots instance visualizer | course material for ai @ Instituto Superior Técnico </h2>
         <div class = "two_cols">
@@ -123,24 +124,24 @@
             A vizualizer used by the students in the Artifical Intelligence course at Instituto Superior Técnico in the year 2020/2021, created by me and
             <a href="https://marghrid.github.io/">Margarida Ferreira</a>.
             It allowed students to create their own instances of Ricochet Robots, to play the game, save the solutions and playback
-            any solution. Code can be found <a href="https://github.com/drcd1/Ricochet-Robots-Viewer">here</a>, 
+            any solution. Code can be found <a href="https://github.com/drcd1/Ricochet-Robots-Viewer">here</a>,
             and you can play around with it <a href="https://drcd1.github.io/Ricochet-Robots-Viewer/">here</a>.
-        </p>            
+        </p>
         </div>
         </div><!--two collumns-->
         </div>
     </div>
     <div>
         <div>
-        <h2>ground truth ambient occlusion | godot 3.x </h2> 
+        <h2>ground truth ambient occlusion | godot 3.x </h2>
         <div class = "two_cols">
             <div class = "left_col">
             <img id="twin_image" src="https://drcd1.github.io/resources/gtao.png">
             </div>
         <div class = 'right_col'>
         <p>
-            After fixing a <a href="https://github.com/godotengine/godot/pull/53154">couple</a> of (very small) <a href="https://github.com/godotengine/godot/pull/51989">bugs</a> in Godot, 
-            I thought it was time to try and contribute with something a little more ambitious, so I did an implementation of 
+            After fixing a <a href="https://github.com/godotengine/godot/pull/53154">couple</a> of (very small) <a href="https://github.com/godotengine/godot/pull/51989">bugs</a> in Godot,
+            I thought it was time to try and contribute with something a little more ambitious, so I did an implementation of
             <a href="https://iryoku.com/downloads/Practical-Realtime-Strategies-for-Accurate-Indirect-Occlusion.pdf">GTAO by Jimenez et al.</a>
             I'm still working on it - as soon as it's done you'll be able to find the code here.
         </p>
@@ -148,10 +149,10 @@
         </div>
         </div>
     </div>
-    
+
     <div>
         <div>
-        <h2>brushify | an "optimization" algorithm to paint pictures </h2> 
+        <h2>brushify | an "optimization" algorithm to paint pictures </h2>
         <div class="two_cols">
         <div class="left_col">
             <video muted autoplay loop id="brushify_video">
@@ -161,7 +162,7 @@
         </div>
         <div class = right_col">
         <p>
-            I felt inspired enough by this <a href="https://twitter.com/anastasiaopara/status/1256506663969972224">tweet</a> to create my own quick implementation of the algorithm described there. 
+            I felt inspired enough by this <a href="https://twitter.com/anastasiaopara/status/1256506663969972224">tweet</a> to create my own quick implementation of the algorithm described there.
             It truly was a pleasant surprise to see the results from what is effectively the simplest "optimization" algorithm. Code will be available soon.
         </p>
         </div>
@@ -171,7 +172,7 @@
     <h1>older stuff</h1>
     <div>
         <div>
-            
+
         <h2>path tracer | project for "3d programming" class @ Instituto Superior Técnico</h2>
         <div class="two_cols">
             <div class="left_col">
@@ -181,18 +182,18 @@
                 </video>
             </div>
             <div class = right_col">
-    
+
         <p>
             Path tracer done with <a href="https://danieltrt.github.io/">Daniel Ramos</a> for a class. The project was only required to be a simple ray tracer with some distributed ray tracing elements
-            (soft-shadows, glossy reflections, etc...), but we decided to implement a full path tracer with support for HDR environment maps, 
+            (soft-shadows, glossy reflections, etc...), but we decided to implement a full path tracer with support for HDR environment maps,
             normal maps, physically based shading, and bokeh depth of field, among other things. <a href="">Code (not yet available)</a> and <a href="https://youtu.be/qhbUIh13w2E">Video</a>
         </p>
-        </div> 
+        </div>
         </div>
     </div>
     <div>
         <div>
-            
+
         <h2>c++ renderer/rasterizer</h2>
         <div class="two_cols">
             <div class="left_col">
@@ -204,7 +205,7 @@
             <div class = right_col">
         <p>
             This is a software rasterizer and renderer that I did to learn the basics of Computer Graphics, before I had ever seen a graphics API in my life.
-            It's not very fast, but it has a few elegantly designed abstractions. It did at some point support <a href="https://en.wikipedia.org/wiki/Shadow_volume">shadow volumes</a> 
+            It's not very fast, but it has a few elegantly designed abstractions. It did at some point support <a href="https://en.wikipedia.org/wiki/Shadow_volume">shadow volumes</a>
             (which is probably my favorite tech in real-time rendering), but it was buggy and slow, so they are not there anymore. Code <a>here! (not yet available)</a>.
         </p>
         </div> <!-- right col-->
@@ -222,7 +223,7 @@
             </div>
             <div class = right_col">
         <p>
-            To aid <a href="">Margarida Ferreira</a> in doing her project for solving <b>cooperative path finding</b> problems, I made a little 
+            To aid <a href="">Margarida Ferreira</a> in doing her project for solving <b>cooperative path finding</b> problems, I made a little
             editor in <b>SFML</b> to ease her creation of new instances of the problem. Together, we created a viewer so that we could easily visualize the solutions.
              The CPFMaker is <a href="https://github.com/drcd1/CPFMaker">here!</a>, and the instance viewer is <a href="https://web.tecnico.ulisboa.pt/~ist180832/CPF/">here</a>
         </p>
@@ -247,7 +248,7 @@
         </div>
         </div>
     </div>
-    
+
     <div>
         <div>
         <h2>cairo/gtk2 renderer</h2>
@@ -260,7 +261,7 @@
             </div>
             <div class = right_col">
         <p>
-            After I finished my first Programming course, I became aware of my love for Computer Graphics 
+            After I finished my first Programming course, I became aware of my love for Computer Graphics
             (which made me switch from Physics to Computer Science the next year). So naturally I used the tools I knew (cairo and gtk2) to
             create a simple renderer. Since <b>cairo</b> is a library for 2D drawing, this is incredibly inefficient. But it was really fun to do! Code <a href="">here! (not yet available)</a>
         </p>
@@ -279,10 +280,10 @@
                 </video>
             </div>
             <div class = right_col">
-        
+
         <p>
             This was the project for the first Programming course I took (and my first time programming in general!).
-             Me and <a href="https://github.com/Astlaan/"> Diogo Valada</a> went above and beyond what was asked of us and instead of solving the problem of two 
+             Me and <a href="https://github.com/Astlaan/"> Diogo Valada</a> went above and beyond what was asked of us and instead of solving the problem of two
              discs colliding analytically, we created a relatively* robust collision solver that works for many disks. Please do not look at the <a href="">code (not yet available)</a>.
         </p>
         <p>
@@ -290,8 +291,8 @@
         </p>
         </div>
     </div>
-    
-    
+
+
     <script>set_tab("stuff_tab")</script>
     </div>
 
