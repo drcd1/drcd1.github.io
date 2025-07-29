@@ -7,6 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" type="text/css" href="https://drcd1.github.io/css/fonts.css">
 <link rel="stylesheet" type="text/css" href="https://drcd1.github.io/css/home.css">
 </head>
 <script>var base_path = "https://drcd1.github.io";</script>
@@ -61,26 +63,66 @@
     <p>
     Here's a few things I've made along the way. Some of them are personal projects, some are things-that-were-used-by-actual-people,
     and others are project courses where I went above and beyond (and a bit outside the scope) of what was needed.
-     Source is/will be available for all of them, so feel free to check it out!
+     Source is be available for some of them, so feel free to check it out!
     </p>
     <p>You can also check out my <a href="https://www.shadertoy.com/user/drcd1">shadertoy</a> for a few small coding experiments I make every once in a while!</p>
 
     <div>
         <div>
-        <h2>twin path tracers | c++ vs rust</h2>
+        <h2>kurayami | bidirectional pathtracer</h2>
         <div class = "two_cols">
             <div class = "left_col">
-            <img id="twin_image" src="https://raw.githubusercontent.com/drcd1/rusty-pete/main/sample_renders/cornell.png">
-            </div>
+                <video muted autoplay loop id="bidir_video">
+                    <source src="https://drcd1.github.io/resources/bidir.mp4"
+                        type="video/mp4">
+                </video>
+                </div>
+
+            <div class = "right_col">
+            <p>A toy renderer called <b>kurayami</b> that implements several advanced pathtracing algorithms, namely Vertex Connection and Merging (VCM) (<a href=https://iliyan.com/publications/VertexMerging>Georgiev, I. et al</a>,
+                <a href="https://cs.uwaterloo.ca/~thachisu/ups.pdf">Hachisuka, T. et al</a>)</p>
+            <p>It also implements some other advanced algorithms, such as path guiding in the style of <a href=https://tom94.net/data/publications/mueller17practical/mueller17practical-author.pdf>(Müller et al, 2017)</a>,
+                 and a version of Metropolis Light Transport for VCM, in the style of <a href="">(Šik et al, 2016)</a></p>
+            <p>This renderer served as the basis of my MSc. Thesis with the topic "MIS weights for Metropolised Bidirectional Rendering Algorithms", which is still under review. You'll be able to find the code here after the review is done.</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div>
+        <div>
+        <h2>real-time subsurface scattering</h2>
+        <div class = "two_cols">
+            <div class = "left_col">
+                <video muted autoplay loop id="sssss_video">
+                    <source src="https://drcd1.github.io/resources/sssss.mp4"
+                        type="video/mp4">
+                </video>
+                </div>
+
+            <div class = "right_col">
+            <p>A little project to get the hang of WebGPU - it implements subsurface scattering and translucency.
+                 If your browser runs WebGPU (mine doesn't), you can find the impementation <a href="htttps://drcd1.github.io/sssss/">here</a>.</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div>
+    <div>
+        <h2>various shadertoy mini-projects</h2>
+        <div class = "two_cols">
+        <div class = "left_col">
+                <video muted autoplay loop id="shader_toy_video">
+                    <source src="https://drcd1.github.io/resources/shadertoy.mp4"
+                        type="video/mp4">
+                </video>
+                </div>
+
         <div class = 'right_col'>
+        <p> 
+            Shadertoy is a wonderful little website that I use to randomly implement (simplified versions of) papers I've read or just test out little simple ideas.
+            You can find my profile <a href=https://www.shadertoy.com/user/drcd1>here</a>.
 
-            <p>This is a little experiment I'm making, comparing the performance of C++ and Rust by writing a toy path tracer in both languages.</p>
-            <p>So far, I've found that it's more natural to write higher performance code in Rust. Using similar constructs, and writing basic textbook code,
-            I've found that the code in Rust runs ~50-100% faster. I'm looking forward to keep working on this project, and I'm really curious
-            to see what happens as I turn this into a fully fledged (bidirectional) path tracer. Here's the <a href="https://github.com/drcd1/cpp-pt">C++ version</a> and the <a href="https://github.com/drcd1/rusty-pete">Rust version</a>.
-            </p>
-			<p>(Update: Since I wrote this, I have used the C++ renderer as the basis for my MSc. Thesis, leaving the Rust one behind and moving on to better languages)</p>
-
+        </p>
         </div>
         </div>
         </div>

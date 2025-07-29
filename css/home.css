@@ -5,16 +5,17 @@
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	background-color: var(--back-color);
 	color:var(--font-color);
 }
 .content{
 	letter-spacing: 0.02em;
-	font-weight: 100;
+	font-weight: 400;
 }
 .content h1{
+	font: Inter;
 	color: #808080;
 	letter-spacing: 0.4em;
 }
@@ -28,8 +29,10 @@ body {
 }
 
 .content h2{
+	
+	font: Inter;
 	color: #303030;
-	font-weight: 100;
+	font-weight: 700;
 	border-top-style: solid;
 	border-top-color: black;
 	border-top-width: 0.05rem;
@@ -39,9 +42,11 @@ body {
 }
 
 #more_stuff h3{
+	
+	font: Inter;
 	margin-top: 2rem;
 	color: #303030;
-	font-weight: 100;
+	font-weight: 700;
 	border-top-style: solid;
 	border-top-color: black;
 	border-top-width: 0.05rem;
@@ -64,9 +69,8 @@ body {
 	width: auto;
 	margin-top: 1rem;
 	margin-right: 1rem;
-	border-radius: 10%;
+	border-radius: 1rem;
 	border-width: 0.2rem;
-	border-radius: 0.5em;
 	border-style: solid;
 	border-color: black;
 }
@@ -152,10 +156,9 @@ body {
 .two_cols .left_col video,.two_cols .left_col img{
 	width: 15em;
 	margin-right: 2em;
-	border-radius: 0.5em;
+	border-radius: 1rem;
 	border-style: solid;
 	border-color: black;
-	border-radius: 20%;
 	
 }
 
@@ -279,6 +282,44 @@ body {
 nav ul{
 	list-style: none;
 	width: 10rem;
+	background-color: var(--back-color);
+	padding: 0rem;
+	font-size: 0.8rem;
+	margin-top: 7rem;
+	margin-left: 0rem;
+	
+}
+
+nav li{
+	border-radius: 2rem;
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+	min-height: 4rem;
+	text-align: center;
+	align-content: center;
+	vertical-align: middle;
+	background-color: var(--main-color);
+}
+nav li:hover{
+	cursor: pointer;
+	color: black;
+	background-color: var(--back-color);
+  transition: color 0.3s, background-color  0.3s;
+}
+
+nav .selected{
+	background: linear-gradient(90deg, 
+		var(--main-color) 0%,var(--back-color) 120%);
+  transition: color 0.3s, background-color  0.3s;
+}
+
+
+/*
+
+
+nav ul{
+	list-style: none;
+	width: 10rem;
 	background-color: var(--main-color);
 	padding: 0;
 	font-size: 0.8rem;
@@ -298,6 +339,9 @@ nav .selected{
 		var(--main-color) 0%,var(--back-color) 120%);
   transition: color 0.3s, background-color  0.3s;
 }
+
+
+*/
 #more_tab{
 	color: transparent;
 }

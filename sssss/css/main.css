@@ -1,0 +1,32 @@
+#main_canvas {
+    background: black;
+    box-shadow: 0rem 0rem 2rem -1rem grey;
+}
+
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    align-content: middle;
+    font-family: "Roboto";
+}
+
+body>p {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+h1>p {
+    margin: 0;
+}
+
+#l1 {
+    font-size: 3.35rem;
+}
+
+#l2 {
+    font-size: 2rem;
+}
